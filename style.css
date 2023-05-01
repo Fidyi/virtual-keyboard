@@ -68,3 +68,6 @@
 .active {
     background-color: #b21919;
   }
+.uppercase {
+ text-transform: uppercase;
+}
