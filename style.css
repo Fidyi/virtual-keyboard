@@ -1,0 +1,77 @@
+#keyboard {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 900px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+  }
+  
+  
+  .function:hover {
+    background-color: #b0b0b0;
+  }
+  
+  .space {
+    width: 300px;
+  }
+  
+  .letter {
+    text-transform: uppercase;
+  }
+
+.delete{
+  width: 75px;
+}
+
+.textarea {
+    margin-bottom: 20px;
+}
+.capslock,
+.enter{
+    min-width: 85px;
+}
+
+.shift {
+    width: 150px;
+}
+.key:active{
+  background-color: #434141;
+  opacity: 0.5;
+  transition: 500ms;
+  box-shadow: none;
+}
+.active {
+    background-color: #434141;
+    opacity: 0.5;
+    transition: 500ms;
+    box-shadow: none;
+  }
+.uppercase {
+ text-transform: uppercase;
+}
