@@ -28,10 +28,34 @@ const keyboardLayout = [
       
       switch (key) {
         case "tab":
+        keyElement.classList.add("tab");
+        keyElement.addEventListener("click", function(e) {
+        e.preventDefault();
+        input.value += "  ";
+        input.focus();
+        });
+        break;
         case "delete":
           keyElement.classList.add("delete");
+          keyElement.addEventListener("click", function() {
+            input.value = input.value.slice(0, -1);
+            input.focus();
+          });
           break;
         case "capslock":
+          keyElement.addEventListener("click", function() {
+            if (keyElement.classList.contains("active")) {
+              keyElement.classList.remove("active");
+              document.querySelectorAll(".letter").forEach(function(element) {
+                element.textContent = element.textContent.toLowerCase();
+              });
+            } else {
+              keyElement.classList.add("active");
+              document.querySelectorAll(".letter").forEach(function(element) {
+                element.textContent = element.textContent.toUpperCase();
+              });
+            }
+          });
           break;
         case "enter":
           keyElement.addEventListener("click", function() {
