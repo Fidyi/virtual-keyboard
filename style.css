@@ -28,15 +28,10 @@
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-size: 13px;
   }
   
- 
-  
-  .function {
-   
-    font-size: 16px;
-  }
   
   .function:hover {
     background-color: #b0b0b0;
@@ -65,8 +60,17 @@
 .shift {
     width: 150px;
 }
+.key:active{
+  background-color: #434141;
+  opacity: 0.5;
+  transition: 500ms;
+  box-shadow: none;
+}
 .active {
-    background-color: #b21919;
+    background-color: #434141;
+    opacity: 0.5;
+    transition: 500ms;
+    box-shadow: none;
   }
 .uppercase {
  text-transform: uppercase;

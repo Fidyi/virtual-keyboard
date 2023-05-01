@@ -72,7 +72,7 @@ window.addEventListener("keyup", function(event) {
           });
           break;
         case "capslock":
-          keyElement.addEventListener("mouseup", function() {
+          keyElement.addEventListener("mousedown", function() {
             if (keyElement.classList.contains("active")) {
               keyElement.classList.remove("active");
               document.querySelectorAll(".letter").forEach(function(element) {
